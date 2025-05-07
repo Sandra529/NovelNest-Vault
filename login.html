@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - NovelNest Vault</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: rgb(49, 22, 3);
+      color: #3e2f1c;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff8f0;
+      border: 1px solid #d4b48a;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    h1 {
+      color: #4a2e00;
+            margin: 0;
+            font-size: 33px;
+            text-transform: uppercase;
+|}
+    h2 {
+      text-align: center;
+      color: #4a2e00;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #c9a97d;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 50%;
+      padding: 10px;
+      background-color: #a97438;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }button {
+      margin-top: 20px;
+      width: 50%;
+      padding: 10px;
+      background-color: #a97438;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button a {
+      margin-top: 20px;
+      width: 50%;
+      padding: 10px;
+      text-decoration: none;
+      background-color: #a97438;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+
+    button:hover {
+      background-color: #7c5328;
+    }
+
+    .signup-link {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+
+    .signup-link a {
+      color: #4a2e00;
+      text-decoration: none;
+    }
+
+    .signup-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container"><center><h1>NovelNest Vault</h1>
+    <h5>Unlock Your Mind With Book Stories</h5>
+    <h2>Log into Your Account</h2>
+    <form action="#">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit"><a href="index1.html">Login</a></button>
+    </form>
+    <div class="signup-link">
+      Don't have an account? <a href="create-account.html"><u> Create an Account</u></a>
+    </div>
+  </div>
+</body>
+</html>

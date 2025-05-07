@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelNest Vault - Submit Book</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+            background-color: #c9a78b;
+            color: #2f2f2f;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .site-header {
+            background-color: #4b2a1d;
+            text-align: center;
+            padding: 20px 10px 10px 10px;
+        }
+
+        .site-header h1 {
+            color: #f4e1d2;
+            margin: 0;
+            font-size: 42px;
+            text-transform: uppercase;
+        }
+
+        .site-header h2 {
+            color: #f4e1d2;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #7a5135;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+            display: flex;
+            gap: 40px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #f4e1d2;
+            font-size: 18px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #d6a46d;
+            color: #4b2a1d;
+        }
+
+        .form-container {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .form-container h3 {
+            font-size: 30px;
+            color: #4b2a1d;
+            margin-bottom: 20px;
+        }
+
+        form {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #f4e1d2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(75, 42, 29, 0.2);
+}
+
+form h2 {
+    text-align: center;
+    color: #4b2a1d;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #4b2a1d;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #7a5135;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 25px;
+    background-color: #4b2a1d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d6a46d;
+    color: #4b2a1d;
+}.footer {
+            background-color: #4b2a1d;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="site-header">
+        <h1>NOVELNEST VAULT</h1>
+        <h2>Vault your vision, start with a story</h2>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index1.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="form.html">Submit Book</a></li>
+            <li><a href="login.html">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <h3>Submit Your Book Completion</h3>
+        <form action="submit-book.html" method="post">
+            <label for="name">Your Name</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Your Email</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="bookTitle">Book Title</label><br>
+            <input type="text" id="bookTitle" name="bookTitle" required><br>
+
+            <label for="bookReview">Book Review</label><br>
+            <textarea id="bookReview" name="bookReview" placeholder="What did you learn from this book?" required></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div><script>
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent real submission
+          alert("Your submission was successful!");
+          form.reset(); // Clear form fields
+        });
+      </script>
+
+    <footer class="footer">
+        <p>&copy; 2025 NovelNest Vault. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
